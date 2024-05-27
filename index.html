@@ -6,10 +6,12 @@
 
 <body style='margin : 0px; overflow: scroll;'>
   <a-scene embedded arjs>
-     
+     <a-assets> 
+        <a-asset-item id="scene" src=".phoenix_bird/scene.gltf"></a-asset-item> 
+        </a-assets> 
+        <a-entity gltf-model="#scene" rotation="-90 0 0"></a-entity>
     <a-marker-camera preset = 'custom' type = 'pattern' url = 'pattern.patt'> 
-      <a-entity
-          position="0 0 0" scale="1 1 1" gltf-model="phoenix_bird/scene.gltf"></a-entity>
+    
       </a-marker-camera>
 
   </a-scene>
