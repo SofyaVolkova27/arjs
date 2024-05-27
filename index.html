@@ -1,15 +1,13 @@
 <!doctype HTML>
 <html>
-
-<body style='margin : 0px; overflow: scroll;'>
 <script src = " https://aframe.io/releases/0.8.2/aframe.min.js "> </script> 
 <script src = " https://raw.githack.com/jeromeetienne/AR.js /1.6.2/aframe/build/aframe-ar.js "> </script>
+<body style='margin : 0px; overflow: scroll;'>
   <a-scene embedded arjs='patternRatio: 0.58'>
-   
+    <a-box position =' 0 0 0 'material =' color:blue '> </a-box> 
     <a-marker-camera preset = 'custom' type = 'pattern' url = 'pattern.patt'> 
     </a-marker-camera>
-    <a-entity position="0 0 0" scale="1 1 1" gltf-model="phoenix_bird/scene.gltf" >
-    </a-entity>
+   
   
   </a-scene>
 </body>
