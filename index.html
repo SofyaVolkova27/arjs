@@ -2,18 +2,15 @@
 <html>
 <script src = " https://aframe.io/releases/0.8.2/aframe.min.js "> </script> 
 <script src = " https://raw.githack.com/jeromeetienne/AR.js /1.6.2/aframe/build/aframe-ar.js "> </script>
-<body style='margin : 0px; overflow: scroll;'>
+<body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
    <a-entity
           position="0 0 0"
           scale="1 1 1"
           gltf-model="wolf/scene.gltf">
-     
-          </a-entity>
+     </a-entity>
     <a-marker-camera preset = 'custom' type = 'pattern' url = 'pattern.patt'> 
     </a-marker-camera>
-   
-  
   </a-scene>
 </body>
 </html>
